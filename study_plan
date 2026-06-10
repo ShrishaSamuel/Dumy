@@ -1,0 +1,60 @@
+Phase	Period	Status	Study Capacity
+Phase 1	Jun 10 → Jul 24	Working (Capgemini)	1–1.5 hrs/day
+Phase 2	Jul 24 → Oct 22	Serving Notice	2 hrs/day + weekends
+Phase 3	Oct 22 → onwards	Free	Full time prep + interviews
+
+Total experience on exit: ~4 years 8 months — strong profile.
+
+Phase 1: June 10 – July 24 (6 Weeks)
+Foundation + High-Priority Tools
+
+Week	Topic	Daily Goal
+Week 1 (Jun 10–16)	Git + GitLab + GitLab CI/CD	5 questions/day + 1 hands-on
+Week 2 (Jun 17–23)	Docker + Docker Compose	Dockerfile + multi-stage build
+Week 3 (Jun 24–30)	Kubernetes Core (Pods, Deploy, Service, Ingress)	1 concept + 1 kubectl command
+Week 4 (Jul 1–7)	Kubernetes Advanced (RBAC, HPA, PVC, NetworkPolicy)	Debug scenarios
+Week 5 (Jul 8–14)	Terraform (deep dive)	1 module per day
+Week 6 (Jul 15–21)	Jenkins + Helm	Pipelines + chart writing
+Weekend habit: 1 mock interview question answered out loud.
+
+Phase 2: July 24 – October 22 (13 Weeks)
+Deep Dive + Hands-On Projects
+
+Week	Topic
+Week 1–2	AWS Core (VPC, EC2, IAM, S3, RDS, EKS, Lambda)
+Week 3	ArgoCD + GitOps patterns
+Week 4	Prometheus + Grafana (PromQL, alerting)
+Week 5	ELK Stack (Elasticsearch, Filebeat, Kibana)
+Week 6	Ansible (playbooks, roles, Molecule testing)
+Week 7	HashiCorp Vault + Secrets Manager + SOPS
+Week 8	Security tools (Trivy, Checkov, tfsec, SonarQube, Falco)
+Week 9	Nginx/Traefik + Networking + Route 53
+Week 10	CloudFormation + Packer + Maven/Gradle
+Week 11	Azure (AKS, ACR, Azure Monitor, Azure DevOps)
+Week 12	Datadog + CloudWatch
+Week 13	Full revision + cross-tool scenario questions
+Weekend habit: Build 1 mini project per 2 weeks (K8s + ArgoCD, Terraform + EKS, etc.)
+
+Phase 3: October 22 Onwards
+Interview Mode
+
+Week	Focus
+Week 1–2	Resume polish + LinkedIn update + apply to companies
+Week 3–4	Mock interviews (tool-by-tool)
+Week 5+	Company-specific prep + live interviews
+
+Projects to Build (Resume-worthy)
+Terraform + EKS — provision a cluster with VPC, node groups, IRSA
+GitLab CI/CD → ArgoCD — full GitOps pipeline to EKS
+Prometheus + Grafana — monitor the above cluster with custom dashboards
+Vault on K8s — inject secrets into pods via Vault Agent
+ELK Stack — centralized logging for a multi-service app
+
+Priority Order
+Must nail first:  Kubernetes, Terraform, AWS, Docker
+Second tier:      ArgoCD, Helm, Jenkins, Prometheus
+Third tier:       Vault, ELK, Ansible, Security tools
+
+One Rule
+Study before you scroll. Not after. Never after.
+You have 4 months and 12 days until your last day. That's enough time to be ready — if you start today.
