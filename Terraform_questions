@@ -1,0 +1,86 @@
+Terraform Interview Questions (4+ Years Experience)
+Core Concepts & Architecture
+
+Explain Terraform's architecture. How do Core, Providers, and the State interact?
+What is the difference between terraform plan, apply, refresh, and import?
+How does Terraform's dependency graph work? When would you use depends_on explicitly?
+Difference between declarative vs imperative IaC — where does Terraform fit and what are its limits?
+What happens internally when you run terraform apply? Walk through the lifecycle.
+
+State Management
+How do you manage Terraform state in a team environment? Why is remote state critical?
+Explain state locking. How does it work with S3 + DynamoDB backend?
+What's the difference between terraform state mv, rm, pull, and push? Give a real scenario for each.
+How do you recover from a corrupted or lost state file?
+How do you handle state drift? What tools/processes do you use to detect it?
+What are the risks of editing terraform.tfstate manually?
+How do you migrate state between backends without downtime?
+
+Modules & Code Organization
+How do you structure a large Terraform repo for multiple environments (dev/stage/prod)?
+Difference between root module, child module, and published modules (registry).
+How do you version modules? What's your strategy for breaking changes?
+When would you use workspaces vs separate state files per environment? Which do you prefer and why?
+How do you pass outputs from one module to another across separate state files? (terraform_remote_state data source)
+
+Workspaces & Environments
+Limitations of Terraform workspaces in production.
+How do you implement DRY principles across environments? (Terragrunt, symlinks, module composition)
+Explain the directory-per-environment vs workspace-per-environment pattern.
+
+Providers & Resources
+How do provider versions get pinned? What's the difference between required_providers and required_version?
+Difference between a resource and a data source.
+How do you handle provider aliasing for multi-region or multi-account deployments?
+What is a null_resource and when have you used it? What about terraform_data (newer alternative)?
+Explain for_each vs count — which is safer for production and why?
+
+Advanced Language Features
+Difference between locals, variables, and outputs.
+Explain dynamic blocks with an example.
+What are moved blocks and removed blocks? When are they critical?
+How does lifecycle { create_before_destroy, prevent_destroy, ignore_changes, replace_triggered_by } work?
+Difference between templatefile() and file() functions.
+
+CI/CD & Automation
+How do you integrate Terraform into a CI/CD pipeline (Jenkins/GitHub Actions/GitLab)?
+How do you handle terraform plan output approval in pipelines?
+How do you manage secrets in Terraform code? (Vault, AWS Secrets Manager, sops)
+How do you prevent accidental destroys in pipelines?
+What's your strategy for PR reviews of Terraform changes?
+
+Testing & Quality
+How do you test Terraform code? (terratest, kitchen-terraform, terraform validate, tflint, checkov, tfsec)
+Explain a unit test vs integration test for a Terraform module.
+How do you enforce policies? (OPA, Sentinel, checkov)
+
+Real-World Scenarios
+You ran terraform apply and it destroyed a production resource. How do you recover?
+A teammate manually changed a resource in AWS console. How do you reconcile?
+You need to rename a resource without destroying it. How?
+How would you import 200 existing AWS resources into Terraform? (terraform import, import block, terraformer)
+You see "Error acquiring the state lock". How do you resolve it safely?
+How do you handle circular dependencies between modules?
+A terraform apply is stuck for 30 minutes. What do you check?
+
+Terraform Cloud / Enterprise
+Difference between Terraform OSS, Cloud, and Enterprise.
+What is a Sentinel policy? Give an example.
+How do remote runs work in Terraform Cloud?
+
+Performance & Scale
+How do you speed up terraform plan on a large state file? (-target, -parallelism, state splitting)
+When and how do you split a monolithic state?
+
+Terraform 1.x+ Features
+What are import blocks (Terraform 1.5+)? Why are they better than the CLI command?
+Explain check blocks and how they differ from validation.
+What's new in Terraform 1.6+ (test framework, etc.)?
+Terraform vs OpenTofu — what's your take?
+
+Comparison & Design
+Terraform vs Ansible vs CloudFormation vs Pulumi — when would you choose each?
+How do you handle stateful resources (RDS, EBS) differently from stateless ones?
+Design a Terraform setup for a multi-account AWS landing zone.
+
+Tip for the interview: Be ready with one war story for state corruption, one for a bad apply, and one showcasing a clean module design
