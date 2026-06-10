@@ -58,3 +58,101 @@ Third tier:       Vault, ELK, Ansible, Security tools
 One Rule
 Study before you scroll. Not after. Never after.
 You have 4 months and 12 days until your last day. That's enough time to be ready — if you start today.
+
+PHASE 1 — Docker (Jun 10 – Jun 21) — 12 Days
+Day	Date	Topic	Hands-On Task
+1	Jun 10	What is Docker, containers vs VMs, install	docker run hello-world, docker ps, docker images
+2	Jun 11	Docker images, Docker Hub, pull/push	Pull nginx, ubuntu. Run and exec into container
+3	Jun 12	Writing your first Dockerfile	Dockerize a simple Python/Node app
+4	Jun 13	Dockerfile best practices — layers, caching, .dockerignore	Optimize an existing Dockerfile, reduce size
+5	Jun 14	Multi-stage builds	Write multi-stage Dockerfile for a Java/Node app
+6	Jun 15	Docker networking — bridge, host, none	Create custom network, connect 2 containers
+7	Jun 16	Docker volumes and bind mounts	Mount a volume, persist data after container restart
+8	Jun 17	Docker Compose basics — services, ports, env	Write compose for app + database
+9	Jun 18	Docker Compose — health checks, depends_on, override files	Add healthcheck, docker-compose.override.yml
+10	Jun 19	Docker security — non-root user, Trivy scan, secrets	trivy image nginx, run container as non-root
+11	Jun 20	CMD vs ENTRYPOINT, ARG vs ENV	Test different combinations
+12	Jun 21	Docker revision + 20 interview questions	Write answers out loud
+
+PHASE 2 — Kubernetes (Jun 22 – Jul 14) — 23 Days
+Day	Date	Topic	Hands-On Task
+13	Jun 22	K8s architecture — API server, etcd, scheduler, kubelet	Install minikube/kind, kubectl cluster-info
+14	Jun 23	Pods — create, describe, logs, exec, delete	kubectl run, kubectl exec -it, kubectl logs
+15	Jun 24	Deployments — create, scale, rollout, rollback	kubectl rollout undo, kubectl scale
+16	Jun 25	Services — ClusterIP, NodePort, LoadBalancer	Expose a deployment, test access
+17	Jun 26	Namespaces + Resource Quotas	Create namespace, deploy app inside it
+18	Jun 27	ConfigMaps — create from file, env, volume mount	Inject config into a pod
+19	Jun 28	Secrets — opaque, TLS, imagePullSecret	Create secret, mount in pod
+20	Jun 29	Ingress + Nginx Ingress Controller	Install ingress controller, write Ingress rule
+21	Jun 30	Liveness, Readiness, Startup Probes	Write all 3 probes in a deployment YAML
+22	Jul 1	Resource requests and limits	Set CPU/memory limits, observe OOMKill
+23	Jul 2	HPA — Horizontal Pod Autoscaler	Set up HPA on CPU metric, generate load
+24	Jul 3	StatefulSets — headless service, stable network ID	Deploy a stateful app (e.g. Redis)
+25	Jul 4	DaemonSets + Jobs + CronJobs	Deploy log agent DaemonSet, schedule a CronJob
+26	Jul 5	PV, PVC, StorageClass — dynamic provisioning	Create PVC, mount in pod, verify persistence
+27	Jul 6	RBAC — Roles, ClusterRoles, ServiceAccounts, RoleBindings	Create SA, bind role, test permissions
+28	Jul 7	NetworkPolicy — restrict pod-to-pod traffic	Write deny-all then allow-specific policy
+29	Jul 8	Taints, Tolerations, Node Affinity	Taint a node, schedule pod with toleration
+30	Jul 9	Helm — chart structure, install, upgrade, rollback	helm install, helm upgrade, helm rollback
+31	Jul 10	Helm — values files, environment overrides, hooks	Create chart with values-prod.yaml
+32	Jul 11	K8s troubleshooting — CrashLoopBackOff, OOMKill, Pending	Deliberately break pods, debug them
+33	Jul 12	EKS — managed nodes, IRSA, AWS LB Controller	Create EKS cluster with eksctl
+34	Jul 13	EKS — Karpenter / Cluster Autoscaler, upgrades	Deploy app to EKS, expose via ALB
+35	Jul 14	K8s full revision + 30 interview questions	Answer out loud, write YAML from memory
+
+PHASE 3 — Terraform (Jul 15 – Jul 28) — 14 Days
+Day	Date	Topic	Hands-On Task
+36	Jul 15	Terraform basics — init, plan, apply, destroy, fmt, validate	Create an S3 bucket with Terraform
+37	Jul 16	Providers, Resources, Data Sources	Use aws_ami data source to fetch latest AMI
+38	Jul 17	Variables, Outputs, Locals	Parameterize your config, output VPC ID
+39	Jul 18	State — local vs remote, S3 + DynamoDB backend	Migrate state to S3 backend
+40	Jul 19	State commands — mv, rm, import, pull	Move a resource in state without destroying
+41	Jul 20	Modules — write a reusable VPC module	Create module, call it with different vars
+42	Jul 21	Modules — versioning, registry, nested modules	Use a community module from registry
+43	Jul 22	count vs for_each — when to use each	Create 3 S3 buckets with for_each
+44	Jul 23	lifecycle — create_before_destroy, prevent_destroy, ignore_changes	Apply lifecycle to an EC2 resource
+45	Jul 24	dynamic blocks, templatefile(), for expressions	Write dynamic security group rules
+46	Jul 25	Workspaces vs separate state files	Create dev/prod workspaces
+47	Jul 26	import block (1.5+), moved block, check block	Import an existing AWS resource
+48	Jul 27	Terraform in CI/CD — GitLab pipeline with plan + apply	Write .gitlab-ci.yml with Terraform stages
+49	Jul 28	Terraform revision + 25 interview questions	Answer state, modules, lifecycle questions
+
+PHASE 4 — AWS (Jul 29 – Aug 24) — 27 Days
+Day	Date	Topic	Hands-On Task
+50	Jul 29	IAM — Users, Groups, Roles, Policies, least privilege	Create role, attach policy, assume role
+51	Jul 30	IAM — STS, AssumeRole, cross-account, instance profiles	Write trust policy, test cross-account
+52	Jul 31	VPC — subnets, route tables, IGW, NAT Gateway	Build VPC from scratch (no wizard)
+53	Aug 1	VPC — Security Groups vs NACLs, VPC Endpoints	Add Gateway endpoint for S3
+54	Aug 2	VPC — Peering, Transit Gateway, PrivateLink	Set up VPC peering between 2 VPCs
+55	Aug 3	EC2 — instance types, AMIs, Launch Templates, Spot	Launch EC2 with launch template
+56	Aug 4	EC2 — Auto Scaling Group, ALB, Target Groups	Create ASG with ALB health check
+57	Aug 5	S3 — buckets, storage classes, lifecycle rules	Set lifecycle: Standard → IA → Glacier
+58	Aug 6	S3 — versioning, CRR/SRR, presigned URLs, bucket policy	Enable versioning, test presigned URL
+59	Aug 7	RDS — Multi-AZ vs Read Replicas, parameter groups	Create RDS with Multi-AZ enabled
+60	Aug 8	Aurora — architecture, Global DB, Aurora Serverless	Compare failover time vs RDS
+61	Aug 9	DynamoDB — partition key, sort key, GSI, LSI, hot partitions	Create table, query with GSI
+62	Aug 10	DynamoDB — Streams, DAX, TTL, Global Tables	Enable TTL, observe item expiry
+63	Aug 11	Lambda — basics, triggers, concurrency, cold starts	Create Lambda triggered by S3 event
+64	Aug 12	Lambda — VPC, layers, versions, aliases, provisioned concurrency	Deploy Lambda inside VPC
+65	Aug 13	ECS — task definitions, services, Fargate vs EC2	Deploy a containerized app on Fargate
+66	Aug 14	EKS — IRSA, AWS LB Controller, managed nodes	Deploy app to EKS, expose via Ingress
+67	Aug 15	SQS — Standard vs FIFO, DLQ, visibility timeout	Create SQS + Lambda trigger
+68	Aug 16	SNS + EventBridge + fan-out pattern	Set up SNS → multiple SQS queues
+69	Aug 17	Kinesis Data Streams vs Firehose	Stream data to S3 via Firehose
+70	Aug 18	CloudWatch — metrics, logs, alarms, dashboards, Log Insights	Create alarm on CPU, write Log Insights query
+71	Aug 19	CloudTrail + AWS X-Ray + Container Insights	Enable CloudTrail, trace a Lambda call
+72	Aug 20	KMS — CMK, envelope encryption + Secrets Manager + Parameter Store	Encrypt S3 bucket with CMK
+73	Aug 21	Route 53 — routing policies, health checks, failover	Set up weighted + failover routing
+74	Aug 22	AWS Cost Optimization — Cost Explorer, Trusted Advisor, Budgets	Set up budget alert at $10
+75	Aug 23	Well-Architected Framework — 5 pillars	Review against a real architecture
+76	Aug 24	AWS full revision + 30 scenario questions	Whiteboard 3 architectures from memory
+
+Summary
+Phase	Tool	Dates	Days
+1	Docker	Jun 10 – Jun 21	12
+2	Kubernetes	Jun 22 – Jul 14	23
+3	Terraform	Jul 15 – Jul 28	14
+4	AWS	Jul 29 – Aug 24	27
+By Aug 24 — your 4 must-nail topics are done. 59 days still remaining before Oct 22 for secondary tools + interview prep.
+
+  
