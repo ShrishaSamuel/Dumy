@@ -1,0 +1,91 @@
+DevOps Tools to Cover (4+ Years Level)
+Source Control
+Git — branching strategies (GitFlow, trunk-based), rebase vs merge, conflict resolution
+GitHub / GitLab / Bitbucket — PR workflows, branch protection, webhooks
+
+CI/CD
+Jenkins — pipelines (declarative vs scripted), shared libraries, agents
+GitHub Actions — workflows, reusable workflows, secrets, matrix builds
+GitLab CI/CD — .gitlab-ci.yml, runners, environments
+CircleCI / ArgoCD / Tekton
+
+Infrastructure as Code
+Terraform — covered separately
+Ansible — playbooks, roles, inventory, idempotency
+Pulumi — IaC with real languages
+CloudFormation — AWS-native IaC
+
+Containerization
+Docker — Dockerfile best practices, multi-stage builds, networking, volumes
+Docker Compose — local multi-service orchestration
+
+Container Orchestration
+Kubernetes (K8s) — Pods, Deployments, Services, Ingress, ConfigMaps, Secrets, RBAC, HPA, PVC
+Helm — charts, values, templating, releases
+EKS / GKE / AKS — managed K8s
+
+Monitoring & Observability
+Prometheus — metrics, PromQL, exporters, alertmanager
+Grafana — dashboards, data sources
+ELK Stack (Elasticsearch, Logstash, Kibana) or OpenSearch
+Datadog / New Relic / Dynatrace
+Jaeger / Zipkin — distributed tracing
+
+Logging
+Fluentd / Fluent Bit — log collection and forwarding
+Loki — Grafana's log aggregation
+CloudWatch Logs / Azure Monitor
+
+Secret Management
+HashiCorp Vault — dynamic secrets, PKI, auth methods
+AWS Secrets Manager / Parameter Store
+SOPS / age — secret encryption in Git
+
+Service Mesh & Networking
+Istio / Linkerd — mTLS, traffic management, observability
+Nginx / HAProxy / Traefik — reverse proxy, load balancing
+Envoy — sidecar proxy
+
+Security & Compliance
+Checkov / tfsec / tflint — IaC scanning
+Trivy / Snyk / Clair — container image scanning
+SonarQube — static code analysis
+OWASP ZAP — DAST
+Falco — runtime security for K8s
+
+Cloud Platforms
+AWS — covered separately
+GCP / Azure — core equivalents
+Multi-cloud tools — Crossplane, Terraform
+
+Package & Artifact Management
+Nexus / JFrog Artifactory — artifact repositories
+ECR / GCR / ACR — container registries
+PyPI / npm / Maven proxying
+
+GitOps
+ArgoCD — sync policies, app of apps pattern, RBAC
+Flux CD — reconciliation loops, Kustomize integration
+
+Configuration Management
+Ansible — most common
+Chef / Puppet — legacy but still asked
+
+Networking & DNS
+Route 53 / Cloudflare — DNS, failover
+Nginx Ingress / ALB Ingress Controller
+
+Build Tools
+Maven / Gradle — Java builds
+Make / Bazel — polyglot builds
+Packer — machine image creation (AMIs)
+
+Database DevOps
+Flyway / Liquibase — database migrations
+AWS RDS / Aurora — managed DB operations
+
+Priority Order for Interviews
+Priority	Tools
+Must know	Git, Docker, Kubernetes, Terraform, CI/CD (Jenkins or GitHub Actions), AWS, Prometheus+Grafana
+Should know	Helm, Ansible, ArgoCD, Vault, ELK/Loki
+Good to have	Istio, Falco, Trivy, Crossplane, Pulumi
