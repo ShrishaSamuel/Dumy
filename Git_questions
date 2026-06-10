@@ -1,0 +1,219 @@
+Git & GitLab
+Explain GitFlow vs Trunk-Based Development — when would you choose each?
+git rebase vs git merge — which is safer for shared branches and why?
+How do you resolve a complex merge conflict in a long-lived feature branch?
+What is git bisect and when have you used it?
+How do you squash commits before merging a PR? Why does it matter?
+GitLab protected branches — how do you enforce merge request approvals?
+What are GitLab webhooks? Give a real use case.
+How do you handle secrets accidentally committed to Git history?
+
+Jenkins
+Difference between declarative and scripted pipelines — when would you use scripted?
+What are Jenkins Shared Libraries? How do you structure one?
+How do you configure Jenkins agents (static vs dynamic/cloud agents)?
+How do you handle secrets in Jenkins pipelines? (Credentials plugin, Vault integration)
+What is a Multibranch Pipeline and how does it work?
+How do you trigger a Jenkins job from a GitLab webhook?
+How do you parallelize stages in a declarative pipeline?
+Jenkins is running slow. What do you investigate?
+
+GitLab CI/CD
+Explain the structure of .gitlab-ci.yml — stages, jobs, needs, rules.
+rules vs only/except — why prefer rules?
+What are GitLab Runners? Difference between shared, group, and project runners.
+How do you implement environment deployments with approvals in GitLab?
+What is the needs keyword and how does it enable DAG-based pipelines?
+How do you use GitLab environments and review apps?
+How do you cache dependencies between pipeline runs?
+How do you manage CI/CD variables (masked, protected, file type)?
+
+Ansible
+Explain idempotency in Ansible — how do you ensure your playbooks are idempotent?
+Difference between playbooks, roles, tasks, and handlers.
+How do you structure a production Ansible repo?
+What is Ansible Vault and how do you use it in CI/CD?
+ansible_facts — how do you use them in conditionals?
+How do you manage dynamic inventory (AWS EC2, Azure)?
+when, loop, block/rescue — give examples of each.
+How do you test Ansible roles? (Molecule, testinfra)
+delegate_to and run_once — when are they used?
+
+CloudFormation
+Stacks vs Nested Stacks vs StackSets — when to use each?
+How does CloudFormation Drift Detection work?
+What is a Change Set and why should you always use one?
+How do you handle rollback failures in CloudFormation?
+DependsOn vs natural dependency ordering in CloudFormation?
+How do you pass outputs between stacks? (Export/ImportValue)
+CloudFormation vs Terraform — when would you pick CFN?
+
+
+Docker
+Walk through writing an optimized, production Dockerfile for a Node.js/Python app.
+What is a multi-stage build and what problem does it solve?
+Explain Docker networking modes — bridge, host, overlay, none.
+How do you manage persistent data in Docker? Volumes vs bind mounts.
+How do you minimize Docker image size? (layer caching, .dockerignore, distroless)
+What is the difference between CMD and ENTRYPOINT?
+How do you scan Docker images for vulnerabilities in CI?
+What are Docker build secrets and why use them over ARGs?
+
+
+Docker Compose
+When do you use Docker Compose vs Kubernetes?
+How do you handle environment-specific overrides in Compose? (docker-compose.override.yml)
+How do you set up health checks in Docker Compose?
+Explain depends_on — does it guarantee the service is ready?
+
+Kubernetes
+Explain the control plane components — kube-apiserver, etcd, scheduler, controller-manager.
+Difference between Deployment, StatefulSet, DaemonSet, Job, CronJob.
+How does a Pod get scheduled? Explain node affinity, taints, and tolerations.
+What is a Readiness probe vs Liveness probe vs Startup probe?
+How does HPA work? What metrics can it scale on beyond CPU?
+Explain PVC lifecycle — StorageClass, dynamic vs static provisioning.
+How does RBAC work in K8s? Roles vs ClusterRoles, RoleBindings.
+What happens when you do kubectl delete pod <name> on a pod managed by a Deployment?
+How do you do a zero-downtime rolling update? What fields control it?
+What is a NetworkPolicy and how do you restrict pod-to-pod traffic?
+How do you debug a CrashLoopBackOff pod?
+Explain etcd — what happens if it goes down?
+What is kube-proxy and how does Service routing work?
+
+
+Helm
+Explain Helm chart structure — templates, values, Chart.yaml, helpers.
+How do you manage environment-specific values? (-f values-prod.yaml)
+What is a Helm hook? Give a real example (pre-install, post-upgrade).
+How do you rollback a Helm release?
+What is the difference between helm upgrade --install and helm install?
+How do you template conditionals and loops in Helm?
+What are Helm dependencies (subcharts)?
+How do you lint and test Helm charts in CI? (helm lint, helm template, ct)
+
+EKS / AKS
+How do EKS managed node groups differ from self-managed?
+How does EKS Pod Identity / IRSA (IAM Roles for Service Accounts) work?
+How does the AWS Load Balancer Controller provision ALBs from Ingress resources?
+How do you upgrade an EKS cluster with zero downtime?
+What is Karpenter and how does it differ from Cluster Autoscaler?
+AKS: How does Azure AD integration work with K8s RBAC?
+
+Prometheus & Grafana
+Explain Prometheus data model — metrics types: Counter, Gauge, Histogram, Summary.
+Write a PromQL query to get 95th percentile request latency over 5 minutes.
+How does Alertmanager work? Explain routing, grouping, and silencing.
+What are recording rules and when do you use them?
+How do you monitor a Kubernetes cluster with Prometheus? (kube-state-metrics, node-exporter)
+How do you set up Grafana alerts vs Alertmanager alerts?
+How do you handle high cardinality metrics?
+
+ELK Stack
+Explain the flow: App → Filebeat/Logstash → Elasticsearch → Kibana.
+What is an Elasticsearch index and how does sharding/replication work?
+How do you design an Index Lifecycle Management (ILM) policy?
+Difference between Logstash and Beats (Filebeat, Metricbeat).
+How do you structure logs for better searchability in Kibana? (structured JSON logs)
+How do you handle Elasticsearch cluster going red?
+
+Datadog
+How does the Datadog Agent work? What does it collect by default?
+Explain APM traces, logs, and metrics correlation in Datadog.
+What are Datadog monitors — threshold, anomaly, forecast, composite?
+How do you use Datadog SLOs?
+How do you instrument a Python/Java app for Datadog APM?
+
+CloudWatch / Azure Monitor
+Difference between CloudWatch Metrics, Logs, Alarms, and Dashboards.
+How do you set up CloudWatch Log Insights queries?
+What is AWS Container Insights for EKS?
+Azure Monitor: Log Analytics workspace, KQL queries, Action Groups.
+
+HashiCorp Vault
+Explain Vault's secret engines — KV, AWS, PKI, Database.
+How does dynamic secrets generation work for AWS/DB?
+Explain Vault auth methods — Kubernetes, AWS IAM, AppRole, LDAP.
+What is Vault Agent and how does it handle token renewal?
+How do you set up Vault HA in production?
+What is Vault namespaces (Enterprise)?
+How do you rotate secrets with zero downtime?
+
+AWS Secrets Manager / SSM Parameter Store
+Secrets Manager vs Parameter Store — cost, features, auto-rotation.
+How do you inject secrets into ECS tasks / Lambda / EKS pods?
+How do you set up automatic rotation for an RDS password?
+
+SOPS / age
+How does SOPS encrypt files? Which key providers does it support?
+How do you use SOPS in a GitOps workflow?
+age vs GPG — why prefer age?
+
+Nginx / HAProxy / Traefik
+Nginx as a reverse proxy — write a basic config with upstream and SSL termination.
+Difference between Nginx and HAProxy — which for layer 4 vs layer 7?
+How does Traefik auto-discover services in Docker/Kubernetes?
+How do you configure rate limiting in Nginx?
+How do you handle SSL termination at the load balancer?
+
+Security & Compliance
+How does Checkov scan Terraform code? How do you suppress false positives?
+How do you integrate tfsec into a CI pipeline?
+Trivy — what can it scan? (images, filesystems, repos, K8s)
+How do you set up Snyk in a GitHub Actions pipeline?
+What is SonarQube Quality Gate and how do you fail a build on it?
+OWASP ZAP — how do you run it in CI (baseline scan vs full scan)?
+Falco — how does it detect runtime threats in K8s? Give example rules.
+
+Crossplane
+What is Crossplane and how does it differ from Terraform for managing cloud infra?
+What are Composite Resources (XRs) and Compositions?
+How does Crossplane enable GitOps for infrastructure?
+
+Nexus / JFrog Artifactory / ECR / ACR
+How do you proxy npm, Maven, PyPI through Nexus/Artifactory?
+How do you configure ECR lifecycle policies to manage image retention?
+How do you authenticate to ECR in a CI/CD pipeline?
+
+ArgoCD
+Explain ArgoCD sync policies — manual vs auto-sync, self-heal, prune.
+What is the App of Apps pattern? When do you use it?
+How does ArgoCD RBAC work?
+How do you manage secrets in ArgoCD? (Vault plugin, Sealed Secrets, SOPS)
+What is an ApplicationSet and how does it help with multi-cluster/multi-env?
+How do you handle a sync failed state in ArgoCD?
+ArgoCD vs Flux — key differences?
+
+Route 53 / Cloudflare
+Route 53 routing policies — Failover, Latency, Geolocation, Weighted, Multi-value.
+How do you set up health checks with failover in Route 53?
+What is Cloudflare Workers and when would you use it?
+How do you manage DNS as code? (external-dns controller in K8s)
+
+Maven / Gradle / Packer
+Maven lifecycle phases — validate, compile, test, package, install, deploy.
+How do you configure a Maven settings.xml for Nexus/Artifactory proxy?
+Gradle vs Maven — key differences in build performance?
+Packer — how does it build an AMI? Explain builders, provisioners, post-processors.
+How do you integrate Packer into a CI pipeline for immutable infrastructure?
+
+AWS RDS / Aurora
+RDS Multi-AZ vs Read Replicas — what does each solve?
+How do you perform an RDS major version upgrade with minimal downtime?
+Aurora vs RDS — storage architecture difference, failover time.
+How do you implement RDS Proxy? Why is it useful for Lambda?
+How do you monitor RDS Performance Insights?
+
+Real-World Scenarios (Cross-Tool)
+Your ArgoCD app is out of sync and auto-sync keeps failing. Debug it.
+A Kubernetes pod OOMKilled repeatedly. What do you investigate and change?
+Jenkins pipeline is failing intermittently on a Docker build step. What do you check?
+Vault is returning 403 permission denied to a K8s pod. Walk through debugging.
+Prometheus is missing metrics from a pod. What are the possible causes?
+An ELK cluster's disk is at 95%. What immediate actions do you take?
+A Helm upgrade caused an outage. How do you roll back and prevent it next time?
+
+Study tip: For each tool, prepare one real story of a production problem you solved with it. That's what separates 4+ year candidates from textbook answers.
+
+
+
