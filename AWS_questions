@@ -1,0 +1,114 @@
+AWS Interview Questions (4+ Years Experience)
+Core Services & Architecture
+Explain the AWS Shared Responsibility Model. Where does customer responsibility begin and end?
+How do you design a highly available, fault-tolerant 3-tier architecture on AWS?
+Difference between vertical vs horizontal scaling — when do you use each on AWS?
+What is the difference between RTO and RPO? How do AWS services map to each?
+Explain AWS Global Infrastructure — Regions, AZs, Edge Locations, Local Zones.
+
+Networking (VPC)
+Walk through creating a production-grade VPC from scratch.
+Difference between Internet Gateway, NAT Gateway, and NAT Instance.
+Explain VPC Peering vs Transit Gateway vs AWS PrivateLink — when to use each.
+What is a Security Group vs NACL? How do they differ in stateful/stateless behavior?
+How do you connect on-premises to AWS? (VPN vs Direct Connect — pros, cons, use cases)
+What is VPC Endpoints? Difference between Interface and Gateway endpoints.
+How does Route 53 routing work? Explain: Latency, Failover, Geolocation, Weighted, Multi-value.
+What is AWS Global Accelerator and how does it differ from CloudFront?
+
+Compute (EC2, ECS, EKS, Lambda)
+Explain EC2 instance types — when would you pick compute-optimized vs memory-optimized?
+Difference between On-Demand, Reserved, Spot, and Savings Plans — how do you optimize cost?
+How does Auto Scaling work? Explain: Target Tracking, Step Scaling, Scheduled Scaling.
+What is the difference between Launch Template and Launch Configuration?
+ECS vs EKS vs Fargate — when do you choose each?
+What are Lambda cold starts? How do you mitigate them?
+Explain Lambda concurrency, reserved concurrency, and provisioned concurrency.
+How do you run a Lambda inside a VPC? What are the gotchas?
+
+Storage (S3, EBS, EFS, Glacier)
+S3 storage classes and when to use each (Standard, IA, One-Zone IA, Glacier, Intelligent-Tiering).
+How does S3 versioning, lifecycle policies, and replication (CRR/SRR) work?
+Explain S3 consistency model — strong vs eventual.
+How do you secure an S3 bucket? (Bucket policy, ACL, Block Public Access, presigned URLs, SSE)
+Difference between EBS (gp2 vs gp3 vs io1/io2), EFS, and S3 — when to use each.
+What is EBS Multi-Attach and when is it used?
+How do you optimize S3 performance for large-scale uploads/downloads?
+
+Databases (RDS, Aurora, DynamoDB, ElastiCache)
+RDS Multi-AZ vs Read Replicas — what problem does each solve?
+What makes Aurora different from standard RDS? Explain Aurora Global Database.
+How does DynamoDB work internally? Explain partition keys, sort keys, and hot partitions.
+Difference between DynamoDB Global Tables and standard replication.
+Explain DynamoDB Streams, TTL, and DAX (DynamoDB Accelerator).
+When would you use ElastiCache (Redis vs Memcached)?
+How do you do database migration to AWS with minimal downtime? (DMS, Schema Conversion Tool)
+
+Identity & Security (IAM, KMS, Secrets Manager)
+Explain IAM Roles vs Users vs Groups vs Policies.
+What is the principle of least privilege? How do you enforce it at scale?
+Difference between resource-based policies and identity-based policies.
+What is AWS STS (AssumeRole, AssumeRoleWithWebIdentity, cross-account access)?
+How does KMS work? CMK vs AWS-managed keys, envelope encryption.
+Difference between Secrets Manager and Parameter Store (SSM).
+What is AWS Organizations and how do SCPs (Service Control Policies) work?
+Explain AWS Cognito — User Pools vs Identity Pools.
+
+Messaging & Eventing (SQS, SNS, EventBridge, Kinesis)
+Difference between SQS, SNS, EventBridge, and Kinesis — use case for each.
+SQS Standard vs FIFO queue — tradeoffs?
+What is a Dead Letter Queue (DLQ)? How do you use it for debugging?
+How does Kinesis Data Streams differ from Kinesis Firehose?
+What is fan-out pattern with SNS + SQS?
+How do you guarantee exactly-once delivery in AWS messaging?
+
+Serverless & API Gateway
+API Gateway REST API vs HTTP API vs WebSocket API.
+How do you secure APIs in API Gateway? (IAM, Cognito, Lambda Authorizer, API Key)
+Explain API Gateway throttling and usage plans.
+What is AWS SAM vs Serverless Framework? When would you pick each?
+How do you handle Lambda function versioning and aliases?
+
+Monitoring & Observability (CloudWatch, X-Ray, CloudTrail)
+Difference between CloudWatch Metrics, Logs, Alarms, and Dashboards.
+What is CloudWatch Logs Insights? Give an example query.
+How does AWS X-Ray work? What is a trace, segment, and subsegment?
+What does CloudTrail capture vs CloudWatch?
+How do you set up centralized logging across multiple accounts?
+How do you detect and alert on cost anomalies?
+
+Infrastructure as Code & DevOps
+CloudFormation Stacks vs StackSets vs Nested Stacks.
+What is CloudFormation Drift Detection?
+Difference between CodeCommit, CodeBuild, CodeDeploy, CodePipeline.
+Explain CodeDeploy deployment strategies — In-place, Blue/Green, Canary, Linear.
+How do you manage secrets in CI/CD pipelines on AWS?
+
+Cost Optimization
+How do you analyze and reduce AWS costs? (Cost Explorer, Trusted Advisor, Compute Optimizer)
+How do you implement tagging strategies for cost allocation?
+What is AWS Budgets and how do you set up alerts?
+How do you right-size EC2 instances in production?
+
+Containers & Kubernetes
+How does ECS task definition work? Difference between task and service.
+EKS managed node groups vs self-managed vs Fargate profiles.
+How does AWS Load Balancer Controller work with EKS?
+What is ECR lifecycle policy and why does it matter?
+
+Real-World Scenarios
+Your EC2 instance is unreachable. Walk through your troubleshooting steps.
+An RDS database is hitting max connections. What do you do?
+A Lambda is timing out intermittently. How do you debug it?
+S3 bucket data was accidentally deleted. How do you recover?
+Your application is getting throttled by DynamoDB. How do you fix it?
+You need to achieve 99.99% uptime. Design the architecture.
+How do you migrate a monolith to microservices on AWS?
+How do you handle a multi-region active-active setup?
+
+Well-Architected Framework
+Explain the 5 pillars of the AWS Well-Architected Framework.
+How do you conduct a Well-Architected Review?
+What is AWS Trusted Advisor and what categories does it cover?
+
+Tips for the interview: Be ready to whiteboard a VPC setup, explain a real incident you debugged on AWS, and discuss cost decisions you made. At 4+ years, interviewers expect you to have opinions on architecture tradeoffs, not just textbook answers.
