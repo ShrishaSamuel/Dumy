@@ -1,0 +1,321 @@
+Git & GitLab
+Official Docs
+
+Git: https://git-scm.com/doc
+GitLab CI/CD: https://docs.gitlab.com/ee/ci/
+Cheat Sheets
+
+https://education.github.com/git-cheat-sheet-education.pdf
+https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet
+YouTube
+
+Traversy Media — Git Crash Course: https://www.youtube.com/watch?v=SWYqp7iY_Tc
+TechWorld with Nana — GitLab CI/CD: https://www.youtube.com/watch?v=qP8kir2GUgo
+Hands-On
+
+https://learngitbranching.js.org (interactive, best for branching)
+https://lab.github.com
+
+
+Jenkins
+Official Docs
+
+https://www.jenkins.io/doc/book/pipeline/
+YouTube
+
+TechWorld with Nana — Jenkins Full Course: https://www.youtube.com/watch?v=7KCS70sCoK0
+Abhishek Veeramalla Jenkins: https://www.youtube.com/watch?v=FX322RVNGj4
+Hands-On
+
+Run Jenkins locally: docker run -p 8080:8080 jenkins/jenkins:lts
+https://www.jenkins.io/doc/pipeline/tour/getting-started/
+
+
+Docker
+Official Docs
+
+https://docs.docker.com/get-started/
+Cheat Sheet
+
+https://dockerlabs.collabnix.com/docker/cheatsheet/
+YouTube
+
+TechWorld with Nana — Docker Full Course: https://www.youtube.com/watch?v=3c-iBn73dDE
+Fireship — Docker in 100 seconds: https://www.youtube.com/watch?v=Gjnup-PuquQ
+Hands-On
+
+https://labs.play-with-docker.com (free browser-based Docker)
+https://dockerlabs.collabnix.com
+
+
+Kubernetes
+Official Docs
+
+https://kubernetes.io/docs/home/
+Cheat Sheet
+
+https://kubernetes.io/docs/reference/kubectl/cheatsheet/
+https://k8s-cheatsheets.netlify.app
+YouTube
+
+TechWorld with Nana — K8s Full Course: https://www.youtube.com/watch?v=X48VuDVv0do
+Abhishek Veeramalla — CKA Series: https://www.youtube.com/playlist?list=PLdpzxOOAlwvLGyPsZXQIDHPa4l4O_q2Gv
+Hands-On
+
+https://killercoda.com/playgrounds/scenario/kubernetes (free browser K8s)
+https://labs.play-with-k8s.com
+Install locally: minikube or kind
+CKA exam practice: https://killer.sh
+Free Courses
+
+KodeKloud K8s free: https://kodekloud.com/courses/kubernetes-for-the-absolute-beginners-hands-on/
+
+
+Helm
+Official Docs
+
+https://helm.sh/docs/
+YouTube
+
+TechWorld with Nana — Helm: https://www.youtube.com/watch?v=-ykwb1d0DXU
+Just me and Opensource — Helm: https://www.youtube.com/watch?v=5_J7RWLLVeQ
+Hands-On
+
+https://helm.sh/docs/intro/quickstart/
+Artifact Hub (chart examples): https://artifacthub.io
+
+
+Terraform
+Official Docs
+
+https://developer.hashicorp.com/terraform/docs
+Cheat Sheet
+
+https://spacelift.io/blog/terraform-commands-cheat-sheet
+YouTube
+
+TechWorld with Nana — Terraform: https://www.youtube.com/watch?v=l5k1ai_GBDE
+Sid Palas (CloudChamp) — Terraform AWS: https://www.youtube.com/watch?v=SLB_c_ayRMo
+Anton Babenko (Terraform expert): https://www.youtube.com/@AntonBabenko
+Hands-On
+
+https://developer.hashicorp.com/terraform/tutorials (official, free)
+https://www.katacoda.com/courses/terraform (scenarios)
+Practice repo: https://github.com/antonbabenko/terraform-best-practices
+
+
+Ansible
+Official Docs
+
+https://docs.ansible.com/ansible/latest/index.html
+Cheat Sheet
+
+https://www.digitalocean.com/community/cheatsheets/how-to-use-ansible-cheat-sheet-guide
+YouTube
+
+TechWorld with Nana — Ansible: https://www.youtube.com/watch?v=1id6ERvfozo
+LearnLinuxTV — Ansible Full Course: https://www.youtube.com/watch?v=3RiVKs8GHYQ
+Hands-On
+
+https://www.katacoda.com/courses/ansible
+Use Vagrant + VirtualBox to spin up local VMs to practice
+
+
+AWS
+Official Docs
+
+https://docs.aws.amazon.com
+Cheat Sheets
+
+https://tutorialsdojo.com/aws-cheat-sheets/ (best cheat sheets available)
+https://digitalcloud.training/aws-cheat-sheets/
+YouTube
+
+freeCodeCamp — AWS Full Course: https://www.youtube.com/watch?v=ubCNZFQZZWw
+TechWorld with Nana — AWS: https://www.youtube.com/watch?v=k1RI5locZE4
+Stephane Maarek (paid but worth it): https://www.udemy.com/user/stephane-maarek/
+Hands-On
+
+https://aws.amazon.com/free/ (free tier — use it)
+https://acloudguru.com (labs)
+https://cloudacademy.com
+Practice Exams (for concept validation)
+
+https://www.examtopics.com/exams/amazon/
+https://tutorialsdojo.com
+
+
+ArgoCD
+Official Docs
+
+https://argo-cd.readthedocs.io/en/stable/
+YouTube
+
+TechWorld with Nana — ArgoCD: https://www.youtube.com/watch?v=MeU5_k9ssrs
+Abhishek Veeramalla — ArgoCD: https://www.youtube.com/watch?v=zGndgdGa1Tc
+Hands-On
+
+https://killercoda.com/argoproj (free browser scenarios)
+Install locally on minikube: https://argo-cd.readthedocs.io/en/stable/getting_started/
+
+
+Prometheus & Grafana
+Official Docs
+
+Prometheus: https://prometheus.io/docs/introduction/overview/
+Grafana: https://grafana.com/docs/grafana/latest/
+Cheat Sheet
+
+PromQL: https://promlabs.com/promql-cheat-sheet/
+YouTube
+
+TechWorld with Nana — Prometheus + Grafana: https://www.youtube.com/watch?v=QoDqxm7ybLc
+Marcel Dempers — Prometheus deep dive: https://www.youtube.com/watch?v=h4Sl21AKiDg
+Hands-On
+
+https://promlabs.com/promql-cheat-sheet/ (PromQL practice)
+https://play.grafana.org (live Grafana demo)
+Helm install on minikube: kube-prometheus-stack
+
+
+ELK Stack
+Official Docs
+
+https://www.elastic.co/guide/index.html
+YouTube
+
+Amigoscode — ELK Stack: https://www.youtube.com/watch?v=ZP0NmfyfsoM
+edureka — ELK Tutorial: https://www.youtube.com/watch?v=MRMgd6E9AXE
+Hands-On
+
+https://www.elastic.co/training/free (free Elastic training)
+Docker Compose ELK: https://github.com/deviantony/docker-elk
+
+
+Datadog
+Official Docs
+
+https://docs.datadoghq.com
+YouTube
+
+Datadog official channel: https://www.youtube.com/@DatadogHQ
+Instruqt labs: https://learn.datadoghq.com (free hands-on)
+Hands-On
+
+https://learn.datadoghq.com (free account + labs — best resource)
+
+
+HashiCorp Vault
+Official Docs
+
+https://developer.hashicorp.com/vault/docs
+YouTube
+
+TechWorld with Nana — Vault: https://www.youtube.com/watch?v=j0LHBZG4FXI
+HashiCorp official: https://www.youtube.com/@HashiCorp
+Hands-On
+
+https://developer.hashicorp.com/vault/tutorials (official, free)
+vault server -dev to run locally
+
+
+Nginx / Traefik
+Official Docs
+
+Nginx: https://nginx.org/en/docs/
+Traefik: https://doc.traefik.io/traefik/
+Cheat Sheet
+
+https://www.nginx.com/resources/wiki/start/topics/examples/full/
+YouTube
+
+TechWorld with Nana — Nginx: https://www.youtube.com/watch?v=7VAI73roXaY
+TechWorld with Nana — Traefik: https://www.youtube.com/watch?v=wAiNPgOWHOE
+
+
+Security Tools
+Tool	Docs	Quick Start
+Checkov	https://www.checkov.io/1.Welcome/Quick%20Start.html	pip install checkov
+tfsec	https://aquasecurity.github.io/tfsec	brew install tfsec
+Trivy	https://aquasecurity.github.io/trivy	trivy image nginx
+SonarQube	https://docs.sonarsource.com/sonarqube	Docker: sonarqube:community
+Falco	https://falco.org/docs/	Helm install on K8s
+OWASP ZAP	https://www.zaproxy.org/docs/	Docker: owasp/zap2docker-stable
+YouTube
+
+Abhishek Veeramalla — DevSecOps: https://www.youtube.com/watch?v=eLAzKZcPOls
+
+
+CloudFormation
+Official Docs
+
+https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/
+YouTube
+
+freeCodeCamp — CloudFormation: https://www.youtube.com/watch?v=t97jZch4lMY
+Hands-On
+
+https://aws.amazon.com/cloudformation/getting-started/
+
+
+Maven / Gradle / Packer
+Docs
+
+Maven: https://maven.apache.org/guides/
+Gradle: https://docs.gradle.org
+Packer: https://developer.hashicorp.com/packer/docs
+YouTube
+
+Maven in 10 min: https://www.youtube.com/watch?v=al7bRZzz4oU
+Packer: https://www.youtube.com/watch?v=tbv1lTF1wFU
+
+
+Route 53 / Cloudflare
+Docs
+
+Route 53: https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/
+Cloudflare: https://developers.cloudflare.com/dns/
+
+
+Azure (AKS / ACR / Azure Monitor)
+Official Docs
+
+https://learn.microsoft.com/en-us/azure/
+YouTube
+
+Adam Marczak — Azure For Everyone: https://www.youtube.com/c/Azure4Everyone
+freeCodeCamp — AZ-900: https://www.youtube.com/watch?v=NKEFWyqJ5XA
+Hands-On
+
+https://learn.microsoft.com/en-us/training/ (free Microsoft Learn — best for Azure)
+
+
+Best YouTube Channels (Bookmark These)
+Channel	Best For
+TechWorld with Nana	Everything DevOps — best overall
+Abhishek Veeramalla	K8s, Jenkins, DevSecOps, real projects
+freeCodeCamp	Long full courses
+KodeKloud	Hands-on labs
+Anton Babenko	Terraform deep dives
+That DevOps Guy (Marcel)	Prometheus, ArgoCD, advanced K8s
+NetworkChuck	Docker, networking basics
+
+
+Best Hands-On Practice Platforms (Free)
+Platform	What You Get
+https://killercoda.com	K8s, ArgoCD, Linux scenarios
+https://labs.play-with-docker.com	Docker browser env
+https://labs.play-with-k8s.com	K8s browser env
+https://learn.datadoghq.com	Datadog free labs
+https://developer.hashicorp.com/tutorials	Terraform, Vault, Packer
+https://www.elastic.co/training/free	ELK free training
+https://learn.microsoft.com/training	Azure free labs
+https://kodekloud.com	K8s, Docker, Ansible (some free)
+
+One-Stop Interview Prep
+https://roadmap.sh/devops — visual learning roadmap
+https://github.com/bregman-arie/devops-exercises — 1000+ DevOps Q&A (bookmark this)
+https://github.com/kamranahmedse/developer-roadmap
+https://devopscube.com — in-depth articles on every tool
+
+Rule: For each tool — read docs 20%, watch 1 video 20%, hands-on 60%. Don't just watch and feel productive.
